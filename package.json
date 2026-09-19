@@ -1,0 +1,17 @@
+﻿{
+  "name": "dineshkumar-portfolio",
+  "version": "1.0.0",
+  "description": "Cybersecurity Portfolio for Dineshkumar S",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 3000",
+    "dev": "python -m http.server 3000",
+    "build": "node -c js/main.js && node -c js/terminal.js && echo Production validation successful"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dineshKumar5008/Portfolio.git"
+  },
+  "author": "Dineshkumar S",
+  "license": "MIT"
+}

@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dineshkumar S | Redirecting...</title>
+  <script>
+    // GitHub Pages SPA client-side routing fallback
+    (function () {
+      var repo = '/Portfolio';
+      var path = window.location.pathname;
+      var cleanPath = path.indexOf(repo) === 0 ? path.substring(repo.length) : path;
+      cleanPath = cleanPath.replace(/^\/+/, '');
+      var search = window.location.search;
+      var hash = window.location.hash;
+
+      var target = repo + '/';
+      if (cleanPath && cleanPath !== 'index.html') {
+        target += '#' + cleanPath;
+      }
+      if (hash && target.indexOf(hash) === -1) {
+        target += hash;
+      }
+      window.location.replace(target);
+    })();
+  </script>
+</head>
+<body style="font-family: sans-serif; background: #080c14; color: #f8fafc; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; text-align: center;">
+  <div>
+    <h2>Redirecting to Portfolio...</h2>
+    <p><a href="./" style="color: #10b981;">Click here if you are not redirected automatically.</a></p>
+  </div>
+</body>
+</html>
