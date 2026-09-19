@@ -1,34 +1,42 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dineshkumar S | Redirecting...</title>
-  <script>
-    // GitHub Pages SPA client-side routing fallback
-    (function () {
-      var repo = '/Portfolio';
-      var path = window.location.pathname;
-      var cleanPath = path.indexOf(repo) === 0 ? path.substring(repo.length) : path;
-      cleanPath = cleanPath.replace(/^\/+/, '');
-      var search = window.location.search;
-      var hash = window.location.hash;
-
-      var target = repo + '/';
-      if (cleanPath && cleanPath !== 'index.html') {
-        target += '#' + cleanPath;
-      }
-      if (hash && target.indexOf(hash) === -1) {
-        target += hash;
-      }
-      window.location.replace(target);
-    })();
-  </script>
+  <title>404 — Page Not Found | Dineshkumar S</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
 </head>
-<body style="font-family: sans-serif; background: #080c14; color: #f8fafc; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; text-align: center;">
-  <div>
-    <h2>Redirecting to Portfolio...</h2>
-    <p><a href="./" style="color: #10b981;">Click here if you are not redirected automatically.</a></p>
+<body style="display: flex; align-items: center; justify-content: center; min-height: 100vh; text-align: center; padding: 1.5rem;">
+  <div class="cyber-background-grid" aria-hidden="true"></div>
+  <div class="terminal-wrapper" style="max-width: 520px; width: 100%; position: relative; z-index: 1;">
+    <div class="terminal-header">
+      <div class="terminal-dots">
+        <span class="terminal-dot dot-close"></span>
+        <span class="terminal-dot dot-min"></span>
+        <span class="terminal-dot dot-max"></span>
+      </div>
+      <div class="terminal-title">bash — HTTP 404: ENDPOINT_NOT_FOUND</div>
+      <div class="terminal-badge" style="color: #ef4444; background: rgba(239, 68, 68, 0.15);">404</div>
+    </div>
+    <div class="terminal-body" style="padding: 2.5rem 1.5rem; min-height: auto;">
+      <div class="terminal-line warning" style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem;">
+        [!] Error: The requested route does not exist.
+      </div>
+      <div class="terminal-line" style="margin-bottom: 2rem; color: var(--text-secondary); font-size: 0.95rem;">
+        You've hit an unmapped endpoint on the security server.
+      </div>
+      <div>
+        <a href="./" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Return to Homepage</span>
+        </a>
+      </div>
+    </div>
   </div>
 </body>
 </html>
