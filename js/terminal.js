@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Interactive Cybersecurity Terminal Simulator
  * Dineshkumar S Portfolio
  */
@@ -16,6 +16,7 @@
 <div class="terminal-line">  <span class="cmd-echo">whoami</span>       - Display overview & professional bio</div>
 <div class="terminal-line">  <span class="cmd-echo">skills</span>       - List technical proficiencies & security tools</div>
 <div class="terminal-line">  <span class="cmd-echo">projects</span>     - Show featured cybersecurity projects</div>
+<div class="terminal-line">  <span class="cmd-echo">patent</span>       - View published cryptographic security patent</div>
 <div class="terminal-line">  <span class="cmd-echo">experience</span>   - Display internship & practical background</div>
 <div class="terminal-line">  <span class="cmd-echo">certs</span>        - View certifications (CEH, Cisco, Tata Group)</div>
 <div class="terminal-line">  <span class="cmd-echo">contact</span>      - Get email, phone, and social endpoints</div>
@@ -25,10 +26,23 @@
 
     whoami: () => `
 <div class="terminal-line success"><strong>Dineshkumar S</strong></div>
-<div class="terminal-line">Roles: Cybersecurity Analyst | Ethical Hacker | SOC & Network Support</div>
+<div class="terminal-line">Roles: Cybersecurity Analyst | Published Patent Innovator | SOC & Network Support</div>
+<div class="terminal-line">Intellectual Property: Published Patent in Ephemeral Cryptography (Indian Patent Office)</div>
 <div class="terminal-line">Education: B.E. (Mahendra Engineering College, 2023-2027 Final Year)</div>
 <div class="terminal-line">Status: <span class="success">● Active - Available for Cybersecurity & SOC Roles</span></div>
-<div class="terminal-line info">"Specialized in defensive network monitoring (Suricata/FastAPI), ethical hacking with Nmap/Metasploit, Cisco routing & switching, and hands-on IT support."</div>
+<div class="terminal-line info">"Specialized in defensive network monitoring (Suricata/FastAPI), ethical hacking with Nmap/Metasploit, ephemeral cryptographic security architectures, and hands-on IT support."</div>
+`,
+
+    patent: () => `
+<div class="terminal-line info">=== Published Intellectual Property / Patent ===</div>
+<div class="terminal-line"><span class="success">● STATUS: PUBLISHED</span> (Indian Patent Office / IPO)</div>
+<div class="terminal-line"><strong>Title</strong>     : A Novel Self-Destructive Ephemeral Cryptographic Key Generation Mechanism for Secure Digital Storage and Access</div>
+<div class="terminal-line"><strong>App No</strong>    : 202641022205 A</div>
+<div class="terminal-line"><strong>Published</strong> : 06/03/2026 (The Patent Office Journal No. 10/2026, Page 27543)</div>
+<div class="terminal-line"><strong>IPC Class</strong> : H04L 9/08, 9/06, 9/30, 9/32, 9/00</div>
+<div class="terminal-line"><strong>Applicant</strong> : Mahendra Engineering College</div>
+<div class="terminal-line"><strong>Innovator</strong> : Mr. S. Dineshkumar (Lead Student Innovator)</div>
+<div class="terminal-line info">Abstract: Novel architecture decoupling persistent data storage from ephemeral cryptographic key lifecycles. Automates deterministic key destruction upon session completion or anomaly detection, mitigating memory extraction and forensic data compromise.</div>
 `,
 
     skills: () => `
@@ -76,7 +90,7 @@
 <div class="terminal-line info">=== Communication Endpoints ===</div>
 <div class="terminal-line">Email    : <a href="mailto:dineshkumar9092a@gmail.com" style="color: #10b981;">dineshkumar9092a@gmail.com</a></div>
 <div class="terminal-line">Phone    : <a href="tel:+919092585008" style="color: #10b981;">+91 9092585008</a></div>
-<div class="terminal-line">LinkedIn : <a href="https://www.linkedin.com/in/dineshkumar-senthilkumar-514b84294/-514b84294/" target="_blank" style="color: #06b6d4;">linkedin.com/in/dineshkumar-senthilkumar-514b84294/</a></div>
+<div class="terminal-line">LinkedIn : <a href="https://www.linkedin.com/in/dineshkumar-senthilkumar-514b84294/" target="_blank" style="color: #06b6d4;">linkedin.com/in/dineshkumar-senthilkumar-514b84294/</a></div>
 <div class="terminal-line">GitHub   : <a href="https://github.com/dineshKumar5008" target="_blank" style="color: #06b6d4;">github.com/dineshKumar5008</a></div>
 `,
 

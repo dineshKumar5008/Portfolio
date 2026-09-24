@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
@@ -36,7 +36,7 @@
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#terminal" class="nav-link">Terminal</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#certifications" class="nav-link">Patents &amp; Certs</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -196,6 +196,10 @@
         <!-- Hero Stats Counter -->
         <div class="hero-stats">
           <div class="stat-item">
+            <div class="stat-number">01</div>
+            <div class="stat-label">Published Patent</div>
+          </div>
+          <div class="stat-item">
             <div class="stat-number">02</div>
             <div class="stat-label">Hands-On Internships</div>
           </div>
@@ -206,10 +210,6 @@
           <div class="stat-item">
             <div class="stat-number">CEH</div>
             <div class="stat-label">EC-Council Prep (In Progress)</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">2027</div>
-            <div class="stat-label">B.E. Final Year Graduating</div>
           </div>
         </div>
       </div>
@@ -602,6 +602,7 @@
             <button class="terminal-pill-btn" data-cmd="help">help</button>
             <button class="terminal-pill-btn" data-cmd="skills">skills</button>
             <button class="terminal-pill-btn" data-cmd="projects">projects</button>
+            <button class="terminal-pill-btn" data-cmd="patent">patent</button>
             <button class="terminal-pill-btn" data-cmd="experience">experience</button>
             <button class="terminal-pill-btn" data-cmd="certs">certs</button>
             <button class="terminal-pill-btn" data-cmd="nmap">nmap localhost</button>
@@ -748,12 +749,44 @@
     <section id="certifications" style="background: rgba(14, 21, 36, 0.4);">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">&lt;Accreditations /&gt;</span>
-          <h2 class="section-title">Certifications &amp; Education</h2>
-          <p class="section-subtitle">Verified professional credentials, hands-on virtual simulations, and academic qualifications.</p>
+          <span class="section-tag">&lt;Accreditations &amp; IP /&gt;</span>
+          <h2 class="section-title">Patents, Certifications &amp; Education</h2>
+          <p class="section-subtitle">Published intellectual property, verified cybersecurity credentials, and academic qualifications.</p>
         </div>
 
         <div class="cert-grid">
+          <!-- Published Patent: Indian Patent Office (IPO) -->
+          <div class="cert-card" style="border-color: rgba(16, 185, 129, 0.4); background: linear-gradient(135deg, rgba(16, 185, 129, 0.06) 0%, rgba(14, 21, 36, 0.75) 100%);">
+            <div>
+              <div class="cert-top">
+                <div class="category-icon" style="background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.4); color: var(--accent-primary);">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5"></path>
+                    <path d="M2 12l10 5 10-5"></path>
+                  </svg>
+                </div>
+                <span class="cert-badge-status status-completed" style="font-weight: 700; letter-spacing: 0.03em;">Published Patent</span>
+              </div>
+              <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.6rem;">
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: var(--radius-full); background: rgba(6, 182, 212, 0.12); color: var(--accent-cyan); border: 1px solid rgba(6, 182, 212, 0.25);">App: 202641022205 A</span>
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: var(--radius-full); background: rgba(16, 185, 129, 0.12); color: var(--accent-primary); border: 1px solid rgba(16, 185, 129, 0.25);">Pub: 06/03/2026</span>
+              </div>
+              <h3 class="cert-title" style="font-size: 1.15rem; line-height: 1.4;">A Novel Self-Destructive Ephemeral Cryptographic Key Generation Mechanism for Secure Digital Storage and Access</h3>
+              <div class="cert-issuer" style="color: var(--accent-cyan); font-weight: 600; margin-top: 0.35rem;">
+                Indian Patent Office (IPO) &bull; The Patent Office Journal No. 10/2026 (Pg. 27543)
+              </div>
+            </div>
+            <div style="margin-top: 1rem;">
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.75rem;">
+                Architected a transient cryptographic key framework decoupling physical data persistence from key lifetime. Features automated deterministic key destruction upon session termination or anomaly detection to mitigate memory extraction and forensic attacks.
+              </p>
+              <div style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 0.4rem;">
+                <span>IPC: H04L 9/08</span> &bull; <span>H04L 9/06</span> &bull; <span>H04L 9/30</span> &bull; <span>H04L 9/32</span>
+              </div>
+            </div>
+          </div>
+
           <!-- Cert 1: CEH -->
           <div class="cert-card">
             <div>
@@ -1085,6 +1118,22 @@
             <li>Developed a SOC platform for network monitoring, security alert analysis, and host health monitoring.</li>
             <li>Implemented network discovery, topology visualization, and Suricata/EVE alert integration to facilitate proactive network support and threat detection.</li>
             <li>Built and deployed a FastAPI backend and React-based dashboard on Render.</li>
+          </ul>
+        </div>
+
+        <h4 style="color: var(--accent-cyan); font-size: 1.1rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.3rem; margin-bottom: 0.75rem;">PATENTS &amp; PUBLICATIONS</h4>
+        <div style="margin-bottom: 1.5rem;">
+          <div style="display: flex; justify-content: space-between; font-weight: 700; color: var(--text-primary); flex-wrap: wrap; gap: 0.5rem;">
+            <span>A Novel Self-Destructive Ephemeral Cryptographic Key Generation Mechanism for Secure Digital Storage and Access</span>
+            <span style="color: var(--accent-primary);">Published: 06/03/2026</span>
+          </div>
+          <div style="font-size: 0.88rem; color: var(--accent-cyan); margin-top: 0.25rem; font-family: var(--font-mono);">
+            Indian Patent Office (IPO) | Application No: 202641022205 A | Journal No: 10/2026 (Pg. 27543)
+          </div>
+          <ul style="padding-left: 1.25rem; margin-top: 0.4rem;">
+            <li>Invented a transient, self-destructive cryptographic key architecture separating persistent data storage from ephemeral key lifecycle.</li>
+            <li>Engineered automated deterministic key destruction triggered upon session termination or anomalous intrusion detection.</li>
+            <li>Designed defensive mechanisms against cold-boot attacks, RAM forensic analysis, unauthorized access, and persistent data exfiltration.</li>
           </ul>
         </div>
 

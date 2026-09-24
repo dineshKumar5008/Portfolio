@@ -1,4 +1,4 @@
-﻿# Dineshkumar S — Cybersecurity Portfolio
+# Dineshkumar S — Cybersecurity Portfolio
 
 A modern, responsive, high-performance portfolio website built for **Dineshkumar S**, highlighting his capabilities across Cybersecurity, SOC Operations, Ethical Hacking (CEH in progress), Cisco Network Engineering, and IT Support.
 
@@ -20,6 +20,10 @@ A modern, responsive, high-performance portfolio website built for **Dineshkumar
   - SOC & Defensive Operations (SIEM, Suricata IDS/IPS, Log Analysis, Threat Detection)
   - IT Support & Systems (Hardware/Software Troubleshooting, OS Support, Cabling)
   - Programming & DevOps (Python, FastAPI, React, TypeScript, Bash)
+- **Published Intellectual Property (Patent)**:
+  - *Title*: "A Novel Self-Destructive Ephemeral Cryptographic Key Generation Mechanism for Secure Digital Storage and Access"
+  - *Authority*: Indian Patent Office (IPO) | Application No: `202641022205 A` | Published: `06/03/2026` (Journal No: 10/2026)
+  - *IPC*: `H04L 9/08`, `H04L 9/06`, `H04L 9/30`, `H04L 9/32`, `H04L 9/00`
 - **Certifications & Education**:
   - Certified Ethical Hacker (CEH) – EC-Council (*In Progress*)
   - Cybersecurity Virtual Experience Program – Tata Group (Forage)
