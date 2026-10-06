@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Main Application Logic
  * Dineshkumar S - Cybersecurity Portfolio
  */
@@ -132,7 +132,7 @@ function initTypingEffect() {
 
   const roles = [
     "Cybersecurity Analyst",
-    "Ethical Hacker (CEH in Progress)",
+    "Published Patent Innovator",
     "SOC Specialist & Threat Hunter",
     "Network Support & Cisco Configs",
     "IT Systems & Hardware Specialist"

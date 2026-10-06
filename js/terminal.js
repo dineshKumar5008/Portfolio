@@ -18,7 +18,7 @@
 <div class="terminal-line">  <span class="cmd-echo">projects</span>     - Show featured cybersecurity projects</div>
 <div class="terminal-line">  <span class="cmd-echo">patent</span>       - View published cryptographic security patent</div>
 <div class="terminal-line">  <span class="cmd-echo">experience</span>   - Display internship & practical background</div>
-<div class="terminal-line">  <span class="cmd-echo">certs</span>        - View certifications (CEH, Cisco, Tata Group)</div>
+<div class="terminal-line">  <span class="cmd-echo">certs</span>        - View certifications (Cisco, Tata Group)</div>
 <div class="terminal-line">  <span class="cmd-echo">contact</span>      - Get email, phone, and social endpoints</div>
 <div class="terminal-line">  <span class="cmd-echo">nmap</span>         - Run a simulated port scan on local host</div>
 <div class="terminal-line">  <span class="cmd-echo">clear</span>        - Clear the terminal screen</div>
@@ -81,9 +81,8 @@
 
     certs: () => `
 <div class="terminal-line info">=== Certifications & Credentials ===</div>
-<div class="terminal-line">1. <span class="warning">[IN PROGRESS]</span> Certified Ethical Hacker (CEH) - EC-Council</div>
-<div class="terminal-line">2. <span class="success">[VERIFIED]</span> Cybersecurity Virtual Experience Program - Tata Group (Forage)</div>
-<div class="terminal-line">3. <span class="success">[VERIFIED]</span> Introduction to Cybersecurity & Ethical Hacking - Cisco Networking Academy</div>
+<div class="terminal-line">1. <span class="success">[VERIFIED]</span> Cybersecurity Virtual Experience Program - Tata Group (Forage)</div>
+<div class="terminal-line">2. <span class="success">[VERIFIED]</span> Introduction to Cybersecurity & Ethical Hacking - Cisco Networking Academy</div>
 `,
 
     contact: () => `

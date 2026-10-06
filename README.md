@@ -1,12 +1,12 @@
 # Dineshkumar S — Cybersecurity Portfolio
 
-A modern, responsive, high-performance portfolio website built for **Dineshkumar S**, highlighting his capabilities across Cybersecurity, SOC Operations, Ethical Hacking (CEH in progress), Cisco Network Engineering, and IT Support.
+A modern, responsive, high-performance portfolio website built for **Dineshkumar S**, highlighting his capabilities across Cybersecurity, SOC Operations, Cryptographic Innovation, Cisco Network Engineering, and IT Support.
 
 ## 🚀 Live Features
 
 - **Cyber-Tech Modern Aesthetic**: Deep slate and cyber-green glowing palette with seamless Dark / Light mode switching.
 - **Framed Profile Picture**: Dedicated presentation of Dineshkumar with glowing cyber-ring, status badge (*Available for Cybersecurity Roles & Internships*), and quick tech badges.
-- **Interactive Cybersecurity Terminal**: A browser-based Unix CLI simulator (`help`, `whoami`, `skills`, `projects`, `experience`, `certs`, `nmap localhost`, `contact`, `clear`) with quick-tap command pills.
+- **Interactive Cybersecurity Terminal**: A browser-based Unix CLI simulator (`help`, `whoami`, `skills`, `projects`, `patent`, `experience`, `certs`, `nmap localhost`, `contact`, `clear`) with quick-tap command pills.
 - **Featured Projects**:
   - **SHALXNETGUARD**: Flagship SOC & Network Monitoring Platform with Suricata/EVE alert integration, network discovery, and dynamic topology visualization (deployed on Render with FastAPI + React + TypeScript).
   - **Web Vulnerability Scanner**: Automated OWASP vulnerability detection tool written in Python.
@@ -25,7 +25,6 @@ A modern, responsive, high-performance portfolio website built for **Dineshkumar
   - *Authority*: Indian Patent Office (IPO) | Application No: `202641022205 A` | Published: `06/03/2026` (Journal No: 10/2026)
   - *IPC*: `H04L 9/08`, `H04L 9/06`, `H04L 9/30`, `H04L 9/32`, `H04L 9/00`
 - **Certifications & Education**:
-  - Certified Ethical Hacker (CEH) – EC-Council (*In Progress*)
   - Cybersecurity Virtual Experience Program – Tata Group (Forage)
   - Introduction to Cybersecurity & Ethical Hacking – Cisco Networking Academy
   - Bachelor of Engineering (B.E.) – Mahendra Engineering College (2023–2027)
