@@ -58,13 +58,13 @@
 <div class="terminal-line info">=== Deployed & Open-Source Projects ===</div>
 <div class="terminal-line"><strong>1. SHALXNETGUARD</strong> <span class="success">[LIVE PLATFORM]</span></div>
 <div class="terminal-line">   Cybersecurity SOC & Network Monitoring Platform with Suricata integration, network discovery & topology.</div>
-<div class="terminal-line">   URL: <a href="https://shalxnetguardsocs.tech" target="_blank" style="color: #06b6d4; text-decoration: underline;">https://shalxnetguardsocs.tech</a></div>
+<div class="terminal-line">   URL: <a href="https://shalxnetguardsocs.tech" target="_blank">https://shalxnetguardsocs.tech</a></div>
 <div class="terminal-line"><strong>2. Web Vulnerability Finder</strong></div>
 <div class="terminal-line">   Automated security tool to detect common OWASP weaknesses in web applications.</div>
-<div class="terminal-line">   Repo: <a href="https://github.com/dineshKumar5008/Web-Vulnerability-Scanner" target="_blank" style="color: #06b6d4; text-decoration: underline;">github.com/dineshKumar5008/Web-Vulnerability-Scanner</a></div>
+<div class="terminal-line">   Repo: <a href="https://github.com/dineshKumar5008/Web-Vulnerability-Scanner" target="_blank">github.com/dineshKumar5008/Web-Vulnerability-Scanner</a></div>
 <div class="terminal-line"><strong>3. Password Strength Checker</strong></div>
 <div class="terminal-line">   Entropy calculation and password vulnerability evaluator based on NIST standards.</div>
-<div class="terminal-line">   Repo: <a href="https://github.com/dineshKumar5008/password-strength" target="_blank" style="color: #06b6d4; text-decoration: underline;">github.com/dineshKumar5008/password-strength</a></div>
+<div class="terminal-line">   Repo: <a href="https://github.com/dineshKumar5008/password-strength" target="_blank">github.com/dineshKumar5008/password-strength</a></div>
 `,
 
     experience: () => `
@@ -87,10 +87,10 @@
 
     contact: () => `
 <div class="terminal-line info">=== Communication Endpoints ===</div>
-<div class="terminal-line">Email    : <a href="mailto:dineshkumar9092a@gmail.com" style="color: #10b981;">dineshkumar9092a@gmail.com</a></div>
-<div class="terminal-line">Phone    : <a href="tel:+919092585008" style="color: #10b981;">+91 9092585008</a></div>
-<div class="terminal-line">LinkedIn : <a href="https://www.linkedin.com/in/dineshkumar-senthilkumar-514b84294/" target="_blank" style="color: #06b6d4;">linkedin.com/in/dineshkumar-senthilkumar-514b84294/</a></div>
-<div class="terminal-line">GitHub   : <a href="https://github.com/dineshKumar5008" target="_blank" style="color: #06b6d4;">github.com/dineshKumar5008</a></div>
+<div class="terminal-line">Email    : <a href="mailto:dineshkumar9092a@gmail.com">dineshkumar9092a@gmail.com</a></div>
+<div class="terminal-line">Phone    : <a href="tel:+919092585008">+91 9092585008</a></div>
+<div class="terminal-line">LinkedIn : <a href="https://www.linkedin.com/in/dineshkumar-senthilkumar-514b84294/" target="_blank">linkedin.com/in/dineshkumar-senthilkumar-514b84294/</a></div>
+<div class="terminal-line">GitHub   : <a href="https://github.com/dineshKumar5008" target="_blank">github.com/dineshKumar5008</a></div>
 `,
 
     nmap: () => `
@@ -118,7 +118,7 @@
     // Append user command
     const userEcho = document.createElement('div');
     userEcho.className = 'terminal-line';
-    userEcho.innerHTML = `<span class="terminal-prompt-prefix">guest@dineshkumar:~$</span> <span class="cmd-echo">${escapeHtml(input)}</span>`;
+    userEcho.innerHTML = `<span class="terminal-prompt-prefix">dineshkumar@workstation:~$</span> <span class="cmd-echo">${escapeHtml(input)}</span>`;
     terminalBody.appendChild(userEcho);
 
     // Evaluate
