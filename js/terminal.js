@@ -15,6 +15,7 @@
 <div class="terminal-line info">Available Commands:</div>
 <div class="terminal-line">  <span class="cmd-echo">whoami</span>       - Display overview & professional bio</div>
 <div class="terminal-line">  <span class="cmd-echo">skills</span>       - List technical proficiencies & security tools</div>
+<div class="terminal-line">  <span class="cmd-echo">mulesoft</span>     - View MuleSoft & API integration skill track</div>
 <div class="terminal-line">  <span class="cmd-echo">projects</span>     - Show featured cybersecurity projects</div>
 <div class="terminal-line">  <span class="cmd-echo">patent</span>       - View published cryptographic security patent</div>
 <div class="terminal-line">  <span class="cmd-echo">ieee</span>         - View published IEEE research paper on AI E-Voting</div>
@@ -66,7 +67,26 @@
 <div class="terminal-line"><span class="cmd-echo">[SOC & Defense]</span>   : SIEM Concepts, Log Analysis, Threat Detection, Suricata EVE-JSON, Endpoint Security</div>
 <div class="terminal-line"><span class="cmd-echo">[Networking]</span>      : OSI Model, TCP/IP, IPv4, Subnetting, VLANs, Routers & Switches, OSPF, NAT/PAT, ACLs</div>
 <div class="terminal-line"><span class="cmd-echo">[IT Support]</span>      : Hardware/Software Diagnostics, System Config, Network Troubleshooting, Windows & Peripherals</div>
+<div class="terminal-line"><span class="cmd-echo">[API Integration]</span> : MuleSoft Anypoint Studio, DataWeave, REST APIs, Postman, Flow Components</div>
 <div class="terminal-line"><span class="cmd-echo">[Development]</span>     : Python, FastAPI, React, TypeScript, Bash/Shell</div>
+`,
+
+    mulesoft: () => `
+<div class="terminal-line info">=== MuleSoft & API Integration Track ===</div>
+<div class="terminal-line"><strong>Focus</strong>: Learning MuleSoft & API integration by building hands-on applications and practicing API transformations.</div>
+<div class="terminal-line"><span class="success">● PRACTICED COMPETENCIES:</span></div>
+<div class="terminal-line">  ✓ HTTP Listener (Configuring endpoints, ports & paths)</div>
+<div class="terminal-line">  ✓ Set Payload (Defining static/dynamic payload content)</div>
+<div class="terminal-line">  ✓ Logger (Flow debugging & event auditing)</div>
+<div class="terminal-line">  ✓ REST API Testing with Postman (Endpoints, payloads & headers)</div>
+<div class="terminal-line">  ✓ Basic Mule Application Deployment (Local runtime execution)</div>
+<div class="terminal-line"><span class="info">● CURRENTLY LEARNING:</span></div>
+<div class="terminal-line">  ⏳ DataWeave (JSON/XML transformation logic & operators)</div>
+<div class="terminal-line">  ⏳ Mule Message Architecture (Payload, Attributes & Variables)</div>
+<div class="terminal-line">  ⏳ HTTP Request Connector (Consuming external web APIs)</div>
+<div class="terminal-line">  ⏳ Error Handling (On-Error Continue/Propagate mechanisms)</div>
+<div class="terminal-line">  ⏳ API Integration (Multi-system routing & orchestration)</div>
+<div class="terminal-line info">Tools: MuleSoft Anypoint Studio, Postman, CloudHub, Git & GitHub</div>
 `,
 
     projects: () => `
@@ -133,6 +153,7 @@
   commands.publication = commands.ieee;
   commands.paper = commands.ieee;
   commands.research = commands.ieee;
+  commands.api = commands.mulesoft;
 
   function executeCommand(input) {
     const rawCmd = input.trim().toLowerCase();

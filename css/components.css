@@ -67,7 +67,7 @@
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 1.75rem;
+  gap: clamp(0.75rem, 1.2vw, 1.75rem);
 }
 
 .nav-link {
@@ -964,6 +964,215 @@
 .skill-chip:hover {
   color: var(--text-primary);
   border-color: var(--border-hover);
+}
+
+/* --------------------------------------------------------------------------
+   MuleSoft & API Integration Section
+   -------------------------------------------------------------------------- */
+.mulesoft-wrapper {
+  margin-top: 1rem;
+}
+
+.mulesoft-learning-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+  margin-bottom: 2.25rem;
+}
+
+@media (max-width: 860px) {
+  .mulesoft-learning-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mulesoft-progress-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.mulesoft-progress-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-2px);
+}
+
+.mulesoft-progress-card.status-practiced {
+  border-top: 3px solid var(--accent-emerald);
+}
+
+.mulesoft-progress-card.status-learning {
+  border-top: 3px solid var(--accent-primary);
+}
+
+.mulesoft-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.mulesoft-group-title {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.mulesoft-status-pill {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.pill-practiced {
+  background: var(--accent-emerald-subtle);
+  color: var(--accent-emerald);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.pill-learning {
+  background: var(--accent-primary-subtle);
+  color: var(--accent-primary);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+}
+
+.mulesoft-group-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.mulesoft-items-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.mulesoft-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1rem;
+  transition: all var(--transition-fast);
+}
+
+.mulesoft-item:hover {
+  border-color: var(--border-hover);
+  background: var(--bg-card-hover);
+  transform: translateX(3px);
+}
+
+.mulesoft-item-icon {
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.mulesoft-item-content {
+  flex: 1;
+}
+
+.mulesoft-item-name {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.15rem;
+}
+
+.mulesoft-item-sub {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Competency Grid for all 11 skills */
+.mulesoft-catalog-header {
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.mulesoft-catalog-title {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.mulesoft-all-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 0.95rem;
+}
+
+.mulesoft-skill-badge-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.15rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  transition: all var(--transition-fast);
+}
+
+.mulesoft-skill-badge-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-2px);
+}
+
+.mulesoft-skill-icon-wrap {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-xs);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-primary);
+  flex-shrink: 0;
+}
+
+.mulesoft-skill-text {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.35;
+}
+
+.mulesoft-skill-tag {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
 }
 
 /* --------------------------------------------------------------------------
