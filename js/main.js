@@ -133,6 +133,7 @@ function initTypingEffect() {
   const roles = [
     "Cybersecurity Analyst",
     "Published Patent Innovator",
+    "IEEE Published Researcher",
     "SOC Specialist & Threat Hunter",
     "Network Support & Cisco Configs",
     "IT Systems & Hardware Specialist"

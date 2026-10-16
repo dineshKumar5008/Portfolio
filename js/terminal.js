@@ -17,6 +17,7 @@
 <div class="terminal-line">  <span class="cmd-echo">skills</span>       - List technical proficiencies & security tools</div>
 <div class="terminal-line">  <span class="cmd-echo">projects</span>     - Show featured cybersecurity projects</div>
 <div class="terminal-line">  <span class="cmd-echo">patent</span>       - View published cryptographic security patent</div>
+<div class="terminal-line">  <span class="cmd-echo">ieee</span>         - View published IEEE research paper on AI E-Voting</div>
 <div class="terminal-line">  <span class="cmd-echo">experience</span>   - Display internship & practical background</div>
 <div class="terminal-line">  <span class="cmd-echo">certs</span>        - View certifications (Cisco, Tata Group)</div>
 <div class="terminal-line">  <span class="cmd-echo">contact</span>      - Get email, phone, and social endpoints</div>
@@ -26,8 +27,8 @@
 
     whoami: () => `
 <div class="terminal-line success"><strong>Dineshkumar S</strong></div>
-<div class="terminal-line">Roles: Cybersecurity Analyst | Published Patent Innovator | SOC & Network Support</div>
-<div class="terminal-line">Intellectual Property: Published Patent in Ephemeral Cryptography (Indian Patent Office)</div>
+<div class="terminal-line">Roles: Cybersecurity Analyst | Published Patent Innovator | IEEE Published Researcher | SOC & Network Support</div>
+<div class="terminal-line">Intellectual Property & Research: Published Patent in Ephemeral Cryptography (IPO) & IEEE Published Research (ICIMIA-2026)</div>
 <div class="terminal-line">Education: B.E. (Mahendra Engineering College, 2023-2027 Final Year)</div>
 <div class="terminal-line">Status: <span class="success">● Active - Available for Cybersecurity & SOC Roles</span></div>
 <div class="terminal-line info">"Specialized in defensive network monitoring (Suricata/FastAPI), ethical hacking with Nmap/Metasploit, ephemeral cryptographic security architectures, and hands-on IT support."</div>
@@ -45,6 +46,20 @@
 <div class="terminal-line info">Abstract: Novel architecture decoupling persistent data storage from ephemeral cryptographic key lifecycles. Automates deterministic key destruction upon session completion or anomaly detection, mitigating memory extraction and forensic data compromise.</div>
 `,
 
+    ieee: () => `
+<div class="terminal-line info">=== Published IEEE Research Paper & Presentation ===</div>
+<div class="terminal-line"><span class="success">● STATUS: PUBLISHED & PRESENTED (IEEE ICIMIA-2026)</span></div>
+<div class="terminal-line"><strong>Title</strong>       : AI-Driven Cryptographically Auditable Cloud-Based E-Voting System</div>
+<div class="terminal-line"><strong>Conference</strong>  : 5th International Conference on Innovative Mechanisms for Industry Applications (ICIMIA-2026)</div>
+<div class="terminal-line"><strong>Publisher</strong>   : IEEE / IEEE Industry Applications Society (IAS)</div>
+<div class="terminal-line"><strong>ISBN</strong>        : 979-8-3315-6199-4 | DVD Part No: CFP26K58-DVD</div>
+<div class="terminal-line"><strong>IEEE Record</strong> : 979-8-3315-6200-7/26 | Pages: 820-826 (7 Pages)</div>
+<div class="terminal-line"><strong>Authors</strong>     : S. Jeevitha, N. Harishwar, <strong>S. DineshKumar</strong>, B. Gopinath, J. Dineshwar</div>
+<div class="terminal-line"><strong>Key Metrics</strong> : MFA Success: 98.9% | DSL Eligibility: 98.6% | Hash-Chain Integrity: 99.9% | Fraud Detection: 99.1%</div>
+<div class="terminal-line info">Abstract: Cloud-based e-voting platform integrating MFA, Domain-Specific Language (DSL) voter qualification, SHA-256 cryptographic hash-chain audit trails, and AI-Based Behavioural Analytics (AIBA) tracking keystroke dynamics and mouse kinetics in real-time.</div>
+<div class="terminal-line">Document    : <a href="assets/docs/ieee-icimia-2026-evoting-paper.pdf" target="_blank">Download IEEE Full Paper (PDF)</a> | <a href="assets/images/ieee-certificate-dineshkumar.jpg" target="_blank">View Presentation Certificate</a></div>
+`,
+
     skills: () => `
 <div class="terminal-line info">=== Technical Skill Matrix ===</div>
 <div class="terminal-line"><span class="cmd-echo">[Security Tools]</span>  : Nmap, Metasploit, Burp Suite, Wireshark, OpenVAS, Linux (Kali/Ubuntu)</div>
@@ -56,13 +71,16 @@
 
     projects: () => `
 <div class="terminal-line info">=== Deployed & Open-Source Projects ===</div>
-<div class="terminal-line"><strong>1. SHALXNETGUARD</strong> <span class="success">[LIVE PLATFORM]</span></div>
+<div class="terminal-line"><strong>1. SHALXNETGUARD</strong> <span class="success">[LIVE SOC PLATFORM]</span></div>
 <div class="terminal-line">   Cybersecurity SOC & Network Monitoring Platform with Suricata integration, network discovery & topology.</div>
 <div class="terminal-line">   URL: <a href="https://shalxnetguardsocs.tech" target="_blank">https://shalxnetguardsocs.tech</a></div>
-<div class="terminal-line"><strong>2. Web Vulnerability Finder</strong></div>
+<div class="terminal-line"><strong>2. AI E-Voting System</strong> <span class="success">[IEEE PUBLISHED RESEARCH]</span></div>
+<div class="terminal-line">   Cryptographically auditable cloud voting with MFA, SHA-256 hash chaining, and AI behavioral fraud analytics.</div>
+<div class="terminal-line">   Paper: <a href="assets/docs/ieee-icimia-2026-evoting-paper.pdf" target="_blank">Read IEEE Paper (PDF)</a> | Certificate: <a href="assets/images/ieee-certificate-dineshkumar.jpg" target="_blank">View Certificate</a></div>
+<div class="terminal-line"><strong>3. Web Vulnerability Finder</strong></div>
 <div class="terminal-line">   Automated security tool to detect common OWASP weaknesses in web applications.</div>
 <div class="terminal-line">   Repo: <a href="https://github.com/dineshKumar5008/Web-Vulnerability-Scanner" target="_blank">github.com/dineshKumar5008/Web-Vulnerability-Scanner</a></div>
-<div class="terminal-line"><strong>3. Password Strength Checker</strong></div>
+<div class="terminal-line"><strong>4. Password Strength Checker</strong></div>
 <div class="terminal-line">   Entropy calculation and password vulnerability evaluator based on NIST standards.</div>
 <div class="terminal-line">   Repo: <a href="https://github.com/dineshKumar5008/password-strength" target="_blank">github.com/dineshKumar5008/password-strength</a></div>
 `,
@@ -110,6 +128,11 @@
       return '';
     }
   };
+
+  // Command aliases
+  commands.publication = commands.ieee;
+  commands.paper = commands.ieee;
+  commands.research = commands.ieee;
 
   function executeCommand(input) {
     const rawCmd = input.trim().toLowerCase();

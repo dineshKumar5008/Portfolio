@@ -4,11 +4,12 @@ A modern, responsive, high-performance portfolio website built for **Dineshkumar
 
 ## 🚀 Live Features
 
-- **Cyber-Tech Modern Aesthetic**: Deep slate and cyber-green glowing palette with seamless Dark / Light mode switching.
-- **Framed Profile Picture**: Dedicated presentation of Dineshkumar with glowing cyber-ring, status badge (*Available for Cybersecurity Roles & Internships*), and quick tech badges.
-- **Interactive Cybersecurity Terminal**: A browser-based Unix CLI simulator (`help`, `whoami`, `skills`, `projects`, `patent`, `experience`, `certs`, `nmap localhost`, `contact`, `clear`) with quick-tap command pills.
+- **Classic Modern Editorial Aesthetic**: Warm charcoal and linen editorial design system with bespoke typography (*Instrument Serif*, *Plus Jakarta Sans*, *JetBrains Mono*) and smooth Dark / Light mode switching.
+- **Framed Profile Portrait**: Refined photographic portrait framing with institutional credential badges.
+- **Interactive Cybersecurity Terminal**: A browser-based Unix CLI simulator (`help`, `whoami`, `skills`, `projects`, `patent`, `ieee`, `experience`, `certs`, `nmap localhost`, `contact`, `clear`) with quick-tap command pills.
 - **Featured Projects**:
   - **SHALXNETGUARD**: Flagship SOC & Network Monitoring Platform with Suricata/EVE alert integration, network discovery, and dynamic topology visualization (deployed on Render with FastAPI + React + TypeScript).
+  - **AI-Driven E-Voting System**: IEEE-published cloud election architecture featuring MFA, DSL eligibility rules, SHA-256 hash chaining, and real-time AI Behavioral Analytics (AIBA) with 99.1% fraud detection.
   - **Web Vulnerability Scanner**: Automated OWASP vulnerability detection tool written in Python.
   - **Password Strength Checker**: NIST-aligned entropy and password complexity auditor in Python.
 - **Experience Timeline**:
@@ -22,16 +23,21 @@ A modern, responsive, high-performance portfolio website built for **Dineshkumar
   - Programming & DevOps (Python, FastAPI, React, TypeScript, Bash)
 - **Published Intellectual Property (Patent)**:
   - *Title*: "A Novel Self-Destructive Ephemeral Cryptographic Key Generation Mechanism for Secure Digital Storage and Access"
-  - *Authority*: Indian Patent Office (IPO) | Application No: `202641022205 A` | Published: `06/03/2026` (Journal No: 10/2026)
+  - *Authority*: Indian Patent Office (IPO) | Application No: `202641022205 A` | Published: `06/03/2026` (Journal No: 10/2026, Pg. 27543)
   - *IPC*: `H04L 9/08`, `H04L 9/06`, `H04L 9/30`, `H04L 9/32`, `H04L 9/00`
+- **Peer-Reviewed IEEE Conference Publication**:
+  - *Title*: "AI-Driven Cryptographically Auditable Cloud-Based E-Voting System"
+  - *Conference*: 5th International Conference on Innovative Mechanisms for Industry Applications (ICIMIA-2026), IEEE
+  - *ISBN*: `979-8-3315-6199-4` | *DVD Part*: `CFP26K58-DVD` | *Pages*: `820–826` | *IEEE Record*: `979-8-3315-6200-7/26`
+  - *Presentation*: Certificate of Presentation from Sasurie College of Engineering, Tirupur (IEEE IAS)
 - **Certifications & Education**:
   - Cybersecurity Virtual Experience Program – Tata Group (Forage)
   - Introduction to Cybersecurity & Ethical Hacking – Cisco Networking Academy
   - Bachelor of Engineering (B.E.) – Mahendra Engineering College (2023–2027)
 - **One-Click Contact & Modals**:
-  - Instant 1-click clipboard copy for email (`dineshkumar9092a@gmail.com`) with animated toast notification.
+  - Instant direct mailto (`dineshkumar9092a@gmail.com`) and phone (`tel:+919092585008`) dispatch.
   - Interactive Contact Form with mailto client dispatch.
-  - Built-in Printable / PDF-saveable Resume Modal.
+  - Built-in Printable / PDF-saveable ATS Resume Modal.
 
 ---
 
@@ -41,7 +47,11 @@ A modern, responsive, high-performance portfolio website built for **Dineshkumar
 dineshkumar-portfolio/
 ├── index.html              # Main semantic HTML5 markup
 ├── assets/
-│   └── profile.jpg         # High-resolution profile photograph
+│   ├── profile.jpg         # High-resolution profile photograph
+│   ├── docs/
+│   │   └── ieee-icimia-2026-evoting-paper.pdf  # Published IEEE 7-page research paper
+│   └── images/
+│       └── ieee-certificate-dineshkumar.jpg     # IEEE presentation certificate
 ├── css/
 │   ├── style.css           # Design tokens, color palettes & typography
 │   └── components.css      # Cards, terminal, timeline, navbar & layout styles
